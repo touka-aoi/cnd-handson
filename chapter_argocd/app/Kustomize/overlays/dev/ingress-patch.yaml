@@ -6,7 +6,7 @@ metadata:
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   rules:
-  - host: dev.kustomize.argocd.vm08.handson.cloudnativedays.jp
+  - host: dev.kustomize.argocd.example.com
     http:
       paths:
       - path: /

@@ -108,7 +108,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: troubleshoot.vm08.handson.cloudnativedays.jp
+  - host: troubleshoot.example.com
     http:
       paths:
       - path: /

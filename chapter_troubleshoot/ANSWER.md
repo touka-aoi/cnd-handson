@@ -293,8 +293,8 @@ kubectl apply -f manifests/05-ingress.yaml
 kubectl get ingress -n troubleshoot
 
 # curlで疎通確認
-curl -H "Host: troubleshoot.vm08.handson.cloudnativedays.jp" http://<ingress-ip>/
-curl -H "Host: troubleshoot.vm08.handson.cloudnativedays.jp" http://<ingress-ip>/api
+curl -H "Host: troubleshoot.example.com" http://<ingress-ip>/
+curl -H "Host: troubleshoot.example.com" http://<ingress-ip>/api
 
 # クリーンアップとして、troubleshootネームスペース内のExternalName Serviceを削除
 kubectl delete svc frontend-app -n troubleshoot

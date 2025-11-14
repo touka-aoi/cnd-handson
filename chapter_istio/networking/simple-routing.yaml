@@ -8,7 +8,7 @@ metadata:
     content: simple-routing
 spec:
   hosts:
-  - app.vm08.handson.cloudnativedays.jp
+  - app.example.com
   gateways:
   - handson
   http:

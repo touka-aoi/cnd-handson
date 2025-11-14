@@ -9,7 +9,7 @@ metadata:
 spec:
   ingressClassName: cilium
   rules:
-  - host: hubble.cilium.vm08.handson.cloudnativedays.jp
+  - host: hubble.cilium.example.com
     http:
       paths:
       - path: /

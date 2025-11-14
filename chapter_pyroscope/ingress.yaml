@@ -9,7 +9,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: pyroscope.vm08.handson.cloudnativedays.jp
+  - host: pyroscope.example.com
     http:
       paths:
       - path: /

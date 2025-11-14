@@ -74,29 +74,29 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 hostsファイルには、この演習を通して利用するIPアドレスとドメインの紐付けを設定してください。YOUR_VM_IP_ADDRESSはこの演習で利用するマシンのIPアドレスを指定してください。
 
 ```
-YOUR_VM_IP_ADDRESS    hello-world.vm08.handson.cloudnativedays.jp
-YOUR_VM_IP_ADDRESS    rollout.vm08.handson.cloudnativedays.jp
-YOUR_VM_IP_ADDRESS    blue.vm08.handson.cloudnativedays.jp
-YOUR_VM_IP_ADDRESS    green.vm08.handson.cloudnativedays.jp
-YOUR_VM_IP_ADDRESS    app.vm08.handson.cloudnativedays.jp
-YOUR_VM_IP_ADDRESS    cndw-web.vm08.handson.cloudnativedays.jp
-YOUR_VM_IP_ADDRESS    prometheus.vm08.handson.cloudnativedays.jp
-YOUR_VM_IP_ADDRESS    grafana.vm08.handson.cloudnativedays.jp
-YOUR_VM_IP_ADDRESS    jaeger.vm08.handson.cloudnativedays.jp
-YOUR_VM_IP_ADDRESS    argocd.vm08.handson.cloudnativedays.jp
-YOUR_VM_IP_ADDRESS    app.argocd.vm08.handson.cloudnativedays.jp
-YOUR_VM_IP_ADDRESS    app.cicd.vm08.handson.cloudnativedays.jp
-YOUR_VM_IP_ADDRESS    dev.kustomize.argocd.vm08.handson.cloudnativedays.jp
-YOUR_VM_IP_ADDRESS    prd.kustomize.argocd.vm08.handson.cloudnativedays.jp
-YOUR_VM_IP_ADDRESS    helm.argocd.vm08.handson.cloudnativedays.jp
-YOUR_VM_IP_ADDRESS    app-preview.argocd.vm08.handson.cloudnativedays.jp
-YOUR_VM_IP_ADDRESS    kiali.vm08.handson.cloudnativedays.jp
-YOUR_VM_IP_ADDRESS    kiali-ambient.vm08.handson.cloudnativedays.jp
-YOUR_VM_IP_ADDRESS    app.cilium.vm08.handson.cloudnativedays.jp
-YOUR_VM_IP_ADDRESS    hubble.cilium.vm08.handson.cloudnativedays.jp
-YOUR_VM_IP_ADDRESS    pyroscope.vm08.handson.cloudnativedays.jp
-YOUR_VM_IP_ADDRESS    troubleshoot.vm08.handson.cloudnativedays.jp
-YOUR_VM_IP_ADDRESS    cnd-web.vm08.handson.cloudnativedays.jp
+YOUR_VM_IP_ADDRESS    hello-world.example.com
+YOUR_VM_IP_ADDRESS    rollout.example.com
+YOUR_VM_IP_ADDRESS    blue.example.com
+YOUR_VM_IP_ADDRESS    green.example.com
+YOUR_VM_IP_ADDRESS    app.example.com
+YOUR_VM_IP_ADDRESS    cndw-web.example.com
+YOUR_VM_IP_ADDRESS    prometheus.example.com
+YOUR_VM_IP_ADDRESS    grafana.example.com
+YOUR_VM_IP_ADDRESS    jaeger.example.com
+YOUR_VM_IP_ADDRESS    argocd.example.com
+YOUR_VM_IP_ADDRESS    app.argocd.example.com
+YOUR_VM_IP_ADDRESS    app.cicd.example.com
+YOUR_VM_IP_ADDRESS    dev.kustomize.argocd.example.com
+YOUR_VM_IP_ADDRESS    prd.kustomize.argocd.example.com
+YOUR_VM_IP_ADDRESS    helm.argocd.example.com
+YOUR_VM_IP_ADDRESS    app-preview.argocd.example.com
+YOUR_VM_IP_ADDRESS    kiali.example.com
+YOUR_VM_IP_ADDRESS    kiali-ambient.example.com
+YOUR_VM_IP_ADDRESS    app.cilium.example.com
+YOUR_VM_IP_ADDRESS    hubble.cilium.example.com
+YOUR_VM_IP_ADDRESS    pyroscope.example.com
+YOUR_VM_IP_ADDRESS    troubleshoot.example.com
+YOUR_VM_IP_ADDRESS    cnd-web.example.com
 ```
 
 ## リポジトリのClone

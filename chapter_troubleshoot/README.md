@@ -394,10 +394,10 @@ kubectl get svc -n troubleshoot
 # backend-app    ExternalName   app-backend.backend.svc.cluster.local         8080/TCP
 
 # curlでアクセスできる
-curl http://troubleshoot.vm08.handson.cloudnativedays.jp/
+curl http://troubleshoot.example.com/
 # <!DOCTYPE html>... (nginxのデフォルトページ)
 
-curl http://troubleshoot.vm08.handson.cloudnativedays.jp/api
+curl http://troubleshoot.example.com/api
 # Hello from backend API
 ```
 
@@ -425,8 +425,8 @@ kubectl get events -n troubleshoot --sort-by='.lastTimestamp'
 # kubectl logs $(kubectl get pods -n ingress-nginx -l app.kubernetes.io/component=controller -o jsonpath='{.items[0].metadata.name}') -n ingress-nginx | grep troubleshoot
 
 # curlで疎通確認
-curl -H "Host: troubleshoot.vm08.handson.cloudnativedays.jp" http://troubleshoot.vm08.handson.cloudnativedays.jp/
-curl -H "Host: troubleshoot.vm08.handson.cloudnativedays.jp" http://troubleshoot.vm08.handson.cloudnativedays.jp/api
+curl -H "Host: troubleshoot.example.com" http://troubleshoot.example.com/
+curl -H "Host: troubleshoot.example.com" http://troubleshoot.example.com/api
 ```
 </details>
 
@@ -449,7 +449,7 @@ kubectl delete -f manifests/05-ingress.yaml
 
 > [!NOTE]
 > - 動作確認は、ブラウザから以下のURLにアクセスすることで行います。
->   - http://cnd-web.vm08.handson.cloudnativedays.jp
+>   - http://cnd-web.example.com
 
 
 以下のコマンドでアプリのデプロイを行なってください。
@@ -476,7 +476,7 @@ kubectl get svc -n troubleshoot
 # mysql-svc     ClusterIP   10.x.x.x        3306/TCP
 
 # curlまたはブラウザでアクセスできる
-curl http://cnd-web.vm08.handson.cloudnativedays.jp
+curl http://cnd-web.example.com
 # <!DOCTYPE html>... (nginxのデフォルトページが表示される)
 ```
 

@@ -304,7 +304,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: hello-world.vm08.handson.cloudnativedays.jp
+  - host: hello-world.example.com
     http:
       paths:
       - pathType: Prefix
@@ -330,7 +330,7 @@ kubectl get ingress
 
 ```Log
 NAME           CLASS   HOSTS                     ADDRESS        PORTS   AGE
-test-ingress   nginx   hello-world.vm08.handson.cloudnativedays.jp   10.96.42.249   80      2m6s
+test-ingress   nginx   hello-world.example.com   10.96.42.249   80      2m6s
 ```
 
 ### 5.2. 動作確認
@@ -339,7 +339,7 @@ test-ingress   nginx   hello-world.vm08.handson.cloudnativedays.jp   10.96.42.24
 Hello Worldの文字が表示されたら成功です。
 
 ```
- hello-world.vm08.handson.cloudnativedays.jp
+ hello-world.example.com
 ```
 
 動作確認後、リソースを削除します。
@@ -384,7 +384,7 @@ kubectl apply -f rollout.yaml
 続いて、ブラウザで以下にアクセスを行います。
 
 ```
-http://rollout.vm08.handson.cloudnativedays.jp
+http://rollout.example.com
 ```
 
 Pod更新前の状態では、`This app is Blue`の画面が表示がされていると思います。
@@ -411,7 +411,7 @@ kubectl get deployments
 更新後、ブラウザで再度以下にアクセスを行うと`This app is Green`の表示に更新されていることが確認できます。
 
 ```
-http://rollout.vm08.handson.cloudnativedays.jp
+http://rollout.example.com
 ```
 
 尚、ロールバックを行う場合は以下のコマンドで実行可能です。
@@ -442,7 +442,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: blue.vm08.handson.cloudnativedays.jp
+  - host: blue.example.com
     http:
       paths:
       - pathType: Prefix
@@ -452,7 +452,7 @@ spec:
             name: blue-service
             port:
               number: 80
-  - host: green.vm08.handson.cloudnativedays.jp
+  - host: green.example.com
     http:
       paths:
       - pathType: Prefix
@@ -481,8 +481,8 @@ kubectl get pods,services,ingress
 
 
 ```
-http://blue.vm08.handson.cloudnativedays.jp → Blue App
-http://green.vm08.handson.cloudnativedays.jp → Green App
+http://blue.example.com → Blue App
+http://green.example.com → Green App
 ```
 
 動作確認実施後、リソースの削除を行います。
@@ -1603,7 +1603,7 @@ kubectl delete namespaces resource-test
 
 > [!NOTE]
 > - 動作確認は、ブラウザから以下のURLにアクセスすることで行います。
->   - http://cnd-web.vm08.handson.cloudnativedays.jp
+>   - http://cnd-web.example.com
 > - リソースの更新後もWeb画面の表示が変わらない場合があります。1-2分待ってからブラウザのリフレッシュを行なってください。
 > - 改修箇所は1箇所ではない可能性があります。また、構成図とエラーメッセージがヒントになる場合があります。
 
