@@ -9,7 +9,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: grafana.example.com
+  - host: grafana.vm08.handson.cloudnativedays.jp
     http:
       paths:
       - path: /
@@ -31,7 +31,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: prometheus.example.com
+  - host: prometheus.vm08.handson.cloudnativedays.jp
     http:
       paths:
       - path: /

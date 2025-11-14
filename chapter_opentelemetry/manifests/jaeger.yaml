@@ -16,7 +16,7 @@ spec:
   ingress:
     enabled: true
     hosts:
-    - jaeger.example.com
+    - jaeger.vm08.handson.cloudnativedays.jp
     ingressClassName: nginx
     annotations:
       nginx.ingress.kubernetes.io/ssl-redirect: "false"

@@ -104,7 +104,7 @@ grafana-tempo-0                           1/1     Running   0          102s
 opentelemetry-operator-569f6b668c-zrzdb   2/2     Running   0          23h
 ```
 デプロイが完了したら次にGrafanaにTempoを追加する設定を行います。
-`http://grafana.example.com/connections/datasources`にアクセスしAdd data sourceをクリックしてください。
+`http://grafana.vm08.handson.cloudnativedays.jp/connections/datasources`にアクセスしAdd data sourceをクリックしてください。
 下のほうへスクロールするとTempoが存在するのでクリックします。
 設定画面に遷移するので`Connection`の`URL`欄に`http://grafana-tempo.monitoring.svc.cluster.local:3100`を入力して一番下にあるSave & testをクリックしてください。
 ![config-tempo](image/config-tempo.png)
@@ -127,9 +127,9 @@ kubectl -n handson patch deployment handson-blue -p '{"spec":{"template":{"metad
 
 これでセットアップは完了です。
 ## search
-まず`http://app.example.com/`にアクセス後Errorのバーをスライドしてエラーを出力します。
+まず`http://app.vm08.handson.cloudnativedays.jp/`にアクセス後Errorのバーをスライドしてエラーを出力します。
 ![slide-bar](image/slide-bar.png)
-次に`http://grafana.example.com/explore`を開きます。
+次に`http://grafana.vm08.handson.cloudnativedays.jp/explore`を開きます。
 Promethusと書かれてるトグルメニューをクリックしてください。するとメニューが展開されるのでTempoを選択します。
 
 ![select-tempo](image/select-tempo.png)

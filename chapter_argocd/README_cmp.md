@@ -428,7 +428,7 @@ headlamp   Synced        Healthy
 ```
 
 ArgoCD Web UIでアプリケーションの詳細を確認できます。
-`http://argocd.example.com/applications/headlamp` にアクセスすると、デプロイされたリソースの状態が視覚化されます。
+`http://argocd.vm08.handson.cloudnativedays.jp/applications/headlamp` にアクセスすると、デプロイされたリソースの状態が視覚化されます。
 
 ![](image/cmp/argocd-cmp-application.png)
 実際にデプロイされたリソースを確認します。

@@ -4,7 +4,7 @@ ingress:
   annotations:
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
   hosts: 
-    - host: headlamp.example.com
+    - host: headlamp.vm08.handson.cloudnativedays.jp
       paths:
         - path: /
           type: Prefix
