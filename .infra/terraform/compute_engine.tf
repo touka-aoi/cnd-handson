@@ -18,4 +18,8 @@ resource "google_compute_instance" "cnd_handson" {
       // Ephemeral public IP
     }
   }
+
+  metadata = {
+    enable-oslogin = "TRUE"
+  }
 }
