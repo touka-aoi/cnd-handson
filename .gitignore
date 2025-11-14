@@ -25,3 +25,6 @@ __*
 *.un~
 Session.vim
 .netrwhist
+
+# terraform
+.terraform/
